@@ -3,6 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  experiments: {
+    topLevelAwait: true
+  },
     entry: ['./src/index.js'],
     output: {
         filename: 'bundle.js',
